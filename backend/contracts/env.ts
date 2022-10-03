@@ -19,5 +19,12 @@ declare module '@ioc:Adonis/Core/Env' {
   */
 
   type CustomTypes = typeof import('../env').default
-  interface EnvTypes extends CustomTypes {}
+  interface EnvTypes extends CustomTypes {
+    DB_CONNECTION: string
+    MYSQL_HOST: string
+    MYSQL_PORT: string
+    MYSQL_USER: string
+    MYSQL_PASSWORD: string
+    MYSQL_DB_NAME: string
+  }
 }
